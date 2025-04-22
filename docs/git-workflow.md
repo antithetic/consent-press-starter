@@ -20,6 +20,18 @@ Our repository uses the following branch structure:
 ### Feature Branches (`feature/*`)
 Use for developing new features or significant enhancements.
 
+When to use:
+- Adding new functionality to the application
+- Implementing major user-facing features
+- Creating new modules or components
+- Significant refactoring that adds new capabilities
+
+When NOT to use:
+- Bug fixes (use `fix/*` instead)
+- Documentation updates (use `docs/*` instead)
+- Dependency updates (use `chore/*` instead)
+- Small UI tweaks (consider if it's better as a `fix/*`)
+
 Examples:
 - `feature/user-authentication`
 - `feature/payment-integration`
@@ -40,6 +52,20 @@ git push origin feature/user-authentication
 
 ### Fix Branches (`fix/*`)
 Use for bug fixes and patches to existing code.
+
+When to use:
+- Fixing bugs in production code
+- Addressing security vulnerabilities
+- Correcting logical errors
+- Fixing performance issues
+- Resolving UI/UX problems
+- Patching data inconsistencies
+
+When NOT to use:
+- Adding new features (use `feature/*` instead)
+- Updating documentation (use `docs/*` instead)
+- Changing configuration (use `chore/*` instead)
+- Refactoring without fixing bugs
 
 Examples:
 - `fix/login-validation`
@@ -62,6 +88,22 @@ git push origin fix/login-validation
 ### Chore Branches (`chore/*`)
 Use for maintenance tasks, dependency updates, and configuration changes.
 
+When to use:
+- Updating dependencies and packages
+- Modifying build configurations
+- Setting up CI/CD pipelines
+- Updating development tools
+- Changing environment variables
+- Modifying project structure
+- Updating linter rules
+- Changing test configurations
+
+When NOT to use:
+- Fixing bugs (use `fix/*` instead)
+- Adding features (use `feature/*` instead)
+- Updating documentation (use `docs/*` instead)
+- Making user-facing changes
+
 Examples:
 - `chore/update-dependencies`
 - `chore/ci-configuration`
@@ -83,6 +125,22 @@ git push origin chore/update-dependencies
 ### Documentation Branches (`docs/*`)
 Use for documentation updates and improvements.
 
+When to use:
+- Writing or updating API documentation
+- Creating installation guides
+- Updating README files
+- Adding contribution guidelines
+- Documenting architecture decisions
+- Creating user manuals
+- Adding code comments
+- Updating changelogs
+
+When NOT to use:
+- Fixing code (use `fix/*` instead)
+- Adding features (use `feature/*` instead)
+- Updating dependencies (use `chore/*` instead)
+- Making configuration changes
+
 Examples:
 - `docs/api-documentation`
 - `docs/installation-guide`
@@ -100,6 +158,31 @@ git add .
 git commit -m "docs(api): add comprehensive API documentation"
 git push origin docs/api-documentation
 ```
+
+## Branch Selection Flowchart
+
+When deciding which branch type to use, follow this decision tree:
+
+```
+Is it a new feature or significant enhancement?
+├── Yes → Use `feature/*`
+└── No → Is it fixing a bug or issue?
+    ├── Yes → Use `fix/*`
+    └── No → Is it updating documentation?
+        ├── Yes → Use `docs/*`
+        └── No → Is it maintenance or configuration?
+            ├── Yes → Use `chore/*`
+            └── No → Re-evaluate the change type
+```
+
+## Branch Type Comparison
+
+| Branch Type | Purpose | Typical Changes | Example Scenarios |
+|-------------|---------|-----------------|-------------------|
+| `feature/*` | New functionality | New code, major changes | User auth, payment system |
+| `fix/*` | Bug fixes | Code corrections | Login validation, API limits |
+| `chore/*` | Maintenance | Config, dependencies | Package updates, CI setup |
+| `docs/*` | Documentation | Text, guides | API docs, installation guide |
 
 ## Branch Naming Convention
 
