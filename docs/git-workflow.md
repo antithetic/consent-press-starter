@@ -4,10 +4,125 @@
 
 Our repository uses the following branch structure:
 
+### Primary Branches
 - `main` - Default branch, contains stable code
 - `develop` - Development branch, where features are integrated
 - `production` - Production branch, contains production-ready code
-- `feature/*` - Feature branches for new development
+
+### Feature Branches
+- `feature/*` - New feature development
+- `fix/*` - Bug fixes and patches
+- `chore/*` - Maintenance tasks and dependency updates
+- `docs/*` - Documentation updates
+
+## Branch Types and Use Cases
+
+### Feature Branches (`feature/*`)
+Use for developing new features or significant enhancements.
+
+Examples:
+- `feature/user-authentication`
+- `feature/payment-integration`
+- `feature/dark-mode`
+
+Use Case:
+```bash
+# Creating a new feature branch
+git checkout develop
+git pull origin develop
+git checkout -b feature/user-authentication
+
+# After development
+git add .
+git commit -m "feat(auth): implement user authentication system"
+git push origin feature/user-authentication
+```
+
+### Fix Branches (`fix/*`)
+Use for bug fixes and patches to existing code.
+
+Examples:
+- `fix/login-validation`
+- `fix/api-rate-limit`
+- `fix/memory-leak`
+
+Use Case:
+```bash
+# Creating a fix branch
+git checkout develop
+git pull origin develop
+git checkout -b fix/login-validation
+
+# After fixing
+git add .
+git commit -m "fix(auth): correct login validation logic"
+git push origin fix/login-validation
+```
+
+### Chore Branches (`chore/*`)
+Use for maintenance tasks, dependency updates, and configuration changes.
+
+Examples:
+- `chore/update-dependencies`
+- `chore/ci-configuration`
+- `chore/linter-setup`
+
+Use Case:
+```bash
+# Creating a chore branch
+git checkout develop
+git pull origin develop
+git checkout -b chore/update-dependencies
+
+# After updates
+git add .
+git commit -m "chore(deps): update all dependencies to latest versions"
+git push origin chore/update-dependencies
+```
+
+### Documentation Branches (`docs/*`)
+Use for documentation updates and improvements.
+
+Examples:
+- `docs/api-documentation`
+- `docs/installation-guide`
+- `docs/contributing-guidelines`
+
+Use Case:
+```bash
+# Creating a docs branch
+git checkout develop
+git pull origin develop
+git checkout -b docs/api-documentation
+
+# After documentation updates
+git add .
+git commit -m "docs(api): add comprehensive API documentation"
+git push origin docs/api-documentation
+```
+
+## Branch Naming Convention
+
+All branch names should:
+- Be lowercase
+- Use hyphens for word separation
+- Be descriptive and concise
+- Follow the pattern: `type/description`
+
+Example branch structure:
+```
+main
+├── develop
+│   ├── feature/user-authentication
+│   ├── feature/payment-integration
+│   ├── fix/login-validation
+│   ├── fix/api-rate-limit
+│   ├── chore/update-dependencies
+│   ├── chore/ci-configuration
+│   ├── docs/api-documentation
+│   └── docs/installation-guide
+└── production
+```
 
 ## Workflow Guidelines
 
