@@ -167,13 +167,74 @@ When deciding which branch type to use, follow this decision tree:
 Is it a new feature or significant enhancement?
 ├── Yes → Use `feature/*`
 └── No → Is it fixing a bug or issue?
-    ├── Yes → Use `fix/*`
+    ├── Yes → Is it a critical production issue?
+    │   ├── Yes → Use `fix/*` (consider hotfix process)
+    │   └── No → Is it a security vulnerability?
+    │       ├── Yes → Use `fix/*` (high priority)
+    │       └── No → Use `fix/*` (normal priority)
     └── No → Is it updating documentation?
-        ├── Yes → Use `docs/*`
+        ├── Yes → Is it code documentation?
+        │   ├── Yes → Use `docs/*` (code comments, API docs)
+        │   └── No → Is it user documentation?
+        │       ├── Yes → Use `docs/*` (user guides, manuals)
+        │       └── No → Use `docs/*` (other documentation)
         └── No → Is it maintenance or configuration?
-            ├── Yes → Use `chore/*`
+            ├── Yes → Is it a dependency update?
+            │   ├── Yes → Use `chore/*` (package updates)
+            │   └── No → Is it a build/CI change?
+            │       ├── Yes → Use `chore/*` (build config)
+            │       └── No → Use `chore/*` (other maintenance)
             └── No → Re-evaluate the change type
+                ├── Is it a refactor?
+                │   ├── Yes → Is it performance-related?
+                │   │   ├── Yes → Use `fix/*` (performance fix)
+                │   │   └── No → Use `feature/*` (architectural change)
+                │   └── No → Is it a UI/UX improvement?
+                │       ├── Yes → Is it fixing a usability issue?
+                │       │   ├── Yes → Use `fix/*` (UX fix)
+                │       │   └── No → Use `feature/*` (enhancement)
+                │       └── No → Consult with team lead
 ```
+
+### Edge Cases and Special Scenarios
+
+#### Performance Improvements
+- If fixing existing performance issues → Use `fix/*`
+- If adding new performance optimizations → Use `feature/*`
+
+#### Security Updates
+- Critical security patches → Use `fix/*` (high priority)
+- Security feature additions → Use `feature/*`
+- Security documentation → Use `docs/*`
+
+#### Refactoring
+- Bug-fixing refactor → Use `fix/*`
+- Architectural improvement → Use `feature/*`
+- Code style cleanup → Use `chore/*`
+
+#### UI/UX Changes
+- Fixing broken UI → Use `fix/*`
+- Improving existing UI → Use `feature/*`
+- UI documentation → Use `docs/*`
+
+#### Database Changes
+- Fixing data issues → Use `fix/*`
+- Schema migrations → Use `feature/*`
+- Documentation updates → Use `docs/*`
+
+#### Testing
+- Adding test coverage → Use `chore/*`
+- Fixing failing tests → Use `fix/*`
+- Test documentation → Use `docs/*`
+
+### Decision Guidelines
+
+When in doubt:
+1. Consider the impact of the change
+2. Evaluate if it's fixing something or adding something
+3. Check if it's user-facing or internal
+4. Determine if it's urgent or can wait
+5. Consult the team if still uncertain
 
 ## Branch Type Comparison
 
