@@ -5,7 +5,9 @@ This document outlines the process of moving code from development to the main b
 ## Overview
 
 The typical flow is:
+
 ```develop → feature/* → develop → main → production
+
 ```
 
 ## Step-by-Step Process
@@ -40,6 +42,7 @@ git push origin feature/your-feature-name
 ### 3. Preparing for Merge to Develop
 
 Before merging to develop:
+
 1. Ensure all tests pass
 2. Update documentation if needed
 3. Resolve any conflicts
@@ -75,6 +78,7 @@ git push origin feature/your-feature-name
 ### 5. Code Review Process
 
 During code review:
+
 - Address all review comments
 - Make necessary changes
 - Push updates to your branch
@@ -90,6 +94,7 @@ git push origin feature/your-feature-name
 ### 6. Merging to Develop
 
 After approval:
+
 ```bash
 # Merge to develop
 git checkout develop
@@ -100,6 +105,7 @@ git push origin develop
 ### 7. Preparing for Main Branch
 
 Before merging to main:
+
 1. Ensure develop is stable
 2. Run final tests
 3. Update version numbers if needed
@@ -136,6 +142,7 @@ git push origin release/v1.0.0
 ### 9. Merging to Main
 
 After approval:
+
 ```bash
 # Merge to main
 git checkout main
@@ -200,6 +207,7 @@ git push origin release/v1.1.0
 ## Best Practices
 
 ### Before Merging to Develop
+
 - [ ] All tests pass
 - [ ] Code is reviewed
 - [ ] Documentation is updated
@@ -207,6 +215,7 @@ git push origin release/v1.1.0
 - [ ] Follows coding standards
 
 ### Before Merging to Main
+
 - [ ] Develop branch is stable
 - [ ] All features are tested
 - [ ] Version numbers updated
@@ -214,12 +223,14 @@ git push origin release/v1.1.0
 - [ ] Release notes prepared
 
 ### Commit Messages
+
 - Use conventional commits
 - Be clear and descriptive
 - Reference issues when applicable
 - Keep commits focused and atomic
 
 ### Branch Management
+
 - Delete feature branches after merge
 - Keep develop branch clean
 - Use release branches for main merges
@@ -228,6 +239,7 @@ git push origin release/v1.1.0
 ## Troubleshooting
 
 ### Merge Conflicts
+
 1. Pull latest changes
 2. Resolve conflicts
 3. Test changes
@@ -247,6 +259,7 @@ git push origin feature/your-feature-name
 ```
 
 ### Failed Tests
+
 1. Identify failing tests
 2. Fix issues
 3. Run tests locally
@@ -254,6 +267,7 @@ git push origin feature/your-feature-name
 5. Verify CI passes
 
 ### Release Issues
+
 1. Create hotfix branch if needed
 2. Fix issues
 3. Test thoroughly
@@ -263,12 +277,14 @@ git push origin feature/your-feature-name
 ## Automation Tips
 
 ### CI/CD Integration
+
 - Set up automated testing
 - Configure branch protection
 - Automate version updates
 - Set up release automation
 
 ### Git Hooks
+
 - Pre-commit hooks for linting
 - Pre-push hooks for testing
 - Commit message validation
@@ -276,4 +292,4 @@ git push origin feature/your-feature-name
 
 ## Contact
 
-For any questions about this workflow, contact the repository maintainers. 
+For any questions about this workflow, contact the repository maintainers.

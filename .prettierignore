@@ -1,0 +1,27 @@
+# Dependencies
+node_modules
+.pnpm-store
+
+# Build output
+dist
+.output
+
+# Cache
+.cache
+.temp
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# IDE
+.idea
+.vscode
+
+# Git
+.git
+
+# OS
+.DS_Store
+Thumbs.db 
