@@ -134,11 +134,92 @@ git reset --hard commit-hash
 
 ## Branch Protection Rules
 
-- `main` and `production` branches are protected
+Branch protection rules are GitHub settings that help maintain code quality and prevent accidental changes to important branches. These rules are essential for maintaining the integrity of our codebase.
+
+### Protected Branches
+
+The following branches are protected:
+- `main` - Default branch containing stable code
+- `production` - Production branch containing deployable code
+
+### Protection Settings
+
+#### Basic Protection
 - Direct pushes to protected branches are not allowed
 - All changes must go through Pull Requests
 - PRs require at least one approval before merging
 - Status checks must pass before merging
+
+#### Required Status Checks
+- All CI/CD pipeline checks must pass
+- Code coverage requirements must be met
+- Build and test suites must complete successfully
+- Dependencies must be up to date
+
+#### Review Requirements
+- At least one approval from team members
+- Review from code owners if the PR affects their code
+- No changes allowed after approval (unless explicitly requested)
+- All conversations must be resolved before merging
+
+#### Additional Rules
+- Branches must be up to date before merging
+- Force pushes are not allowed
+- Branch deletion is restricted
+- Linear history is preferred (no merge commits)
+
+### Setting Up Branch Protection
+
+To set up branch protection rules:
+
+1. Go to repository settings
+2. Navigate to "Branches" in the left sidebar
+3. Under "Branch protection rules", click "Add rule"
+4. Enter the branch name pattern (e.g., `main` or `production`)
+5. Configure the following settings:
+   - [x] Require a pull request before merging
+   - [x] Require approvals
+   - [x] Require status checks to pass
+   - [x] Require branches to be up to date before merging
+   - [x] Include administrators
+   - [x] Restrict who can push to matching branches
+
+### Managing Protected Branches
+
+#### For Developers
+- Always create feature branches from `develop`
+- Keep your branches up to date with the base branch
+- Request reviews from appropriate team members
+- Address all review comments before merging
+
+#### For Maintainers
+- Monitor PRs for compliance with protection rules
+- Review and approve PRs that meet quality standards
+- Handle merge conflicts when necessary
+- Ensure CI/CD pipelines are properly configured
+
+### Troubleshooting Protection Issues
+
+Common issues and solutions:
+
+1. **Cannot push directly to protected branch**
+   - Create a feature branch instead
+   - Submit changes via PR
+
+2. **PR blocked due to failing checks**
+   - Review the failing checks
+   - Fix the issues in your branch
+   - Push the fixes to trigger new checks
+
+3. **PR requires approvals**
+   - Request reviews from team members
+   - Address all review comments
+   - Wait for required number of approvals
+
+4. **Branch is out of date**
+   - Update your branch with the latest changes
+   - Resolve any conflicts
+   - Push the updates
 
 ## Contact
 
