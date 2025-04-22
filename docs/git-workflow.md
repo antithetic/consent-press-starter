@@ -5,11 +5,13 @@
 Our repository uses the following branch structure:
 
 ### Primary Branches
+
 - `main` - Default branch, contains stable code
 - `develop` - Development branch, where features are integrated
 - `production` - Production branch, contains production-ready code
 
 ### Feature Branches
+
 - `feature/*` - New feature development
 - `fix/*` - Bug fixes and patches
 - `chore/*` - Maintenance tasks and dependency updates
@@ -18,26 +20,31 @@ Our repository uses the following branch structure:
 ## Branch Types and Use Cases
 
 ### Feature Branches (`feature/*`)
+
 Use for developing new features or significant enhancements.
 
 When to use:
+
 - Adding new functionality to the application
 - Implementing major user-facing features
 - Creating new modules or components
 - Significant refactoring that adds new capabilities
 
 When NOT to use:
+
 - Bug fixes (use `fix/*` instead)
 - Documentation updates (use `docs/*` instead)
 - Dependency updates (use `chore/*` instead)
 - Small UI tweaks (consider if it's better as a `fix/*`)
 
 Examples:
+
 - `feature/user-authentication`
 - `feature/payment-integration`
 - `feature/dark-mode`
 
 Use Case:
+
 ```bash
 # Creating a new feature branch
 git checkout develop
@@ -51,9 +58,11 @@ git push origin feature/user-authentication
 ```
 
 ### Fix Branches (`fix/*`)
+
 Use for bug fixes and patches to existing code.
 
 When to use:
+
 - Fixing bugs in production code
 - Addressing security vulnerabilities
 - Correcting logical errors
@@ -62,17 +71,20 @@ When to use:
 - Patching data inconsistencies
 
 When NOT to use:
+
 - Adding new features (use `feature/*` instead)
 - Updating documentation (use `docs/*` instead)
 - Changing configuration (use `chore/*` instead)
 - Refactoring without fixing bugs
 
 Examples:
+
 - `fix/login-validation`
 - `fix/api-rate-limit`
 - `fix/memory-leak`
 
 Use Case:
+
 ```bash
 # Creating a fix branch
 git checkout develop
@@ -86,9 +98,11 @@ git push origin fix/login-validation
 ```
 
 ### Chore Branches (`chore/*`)
+
 Use for maintenance tasks, dependency updates, and configuration changes.
 
 When to use:
+
 - Updating dependencies and packages
 - Modifying build configurations
 - Setting up CI/CD pipelines
@@ -99,17 +113,20 @@ When to use:
 - Changing test configurations
 
 When NOT to use:
+
 - Fixing bugs (use `fix/*` instead)
 - Adding features (use `feature/*` instead)
 - Updating documentation (use `docs/*` instead)
 - Making user-facing changes
 
 Examples:
+
 - `chore/update-dependencies`
 - `chore/ci-configuration`
 - `chore/linter-setup`
 
 Use Case:
+
 ```bash
 # Creating a chore branch
 git checkout develop
@@ -123,9 +140,11 @@ git push origin chore/update-dependencies
 ```
 
 ### Documentation Branches (`docs/*`)
+
 Use for documentation updates and improvements.
 
 When to use:
+
 - Writing or updating API documentation
 - Creating installation guides
 - Updating README files
@@ -136,17 +155,20 @@ When to use:
 - Updating changelogs
 
 When NOT to use:
+
 - Fixing code (use `fix/*` instead)
 - Adding features (use `feature/*` instead)
 - Updating dependencies (use `chore/*` instead)
 - Making configuration changes
 
 Examples:
+
 - `docs/api-documentation`
 - `docs/installation-guide`
 - `docs/contributing-guidelines`
 
 Use Case:
+
 ```bash
 # Creating a docs branch
 git checkout develop
@@ -199,30 +221,36 @@ Is it a new feature or significant enhancement?
 ### Edge Cases and Special Scenarios
 
 #### Performance Improvements
+
 - If fixing existing performance issues → Use `fix/*`
 - If adding new performance optimizations → Use `feature/*`
 
 #### Security Updates
+
 - Critical security patches → Use `fix/*` (high priority)
 - Security feature additions → Use `feature/*`
 - Security documentation → Use `docs/*`
 
 #### Refactoring
+
 - Bug-fixing refactor → Use `fix/*`
 - Architectural improvement → Use `feature/*`
 - Code style cleanup → Use `chore/*`
 
 #### UI/UX Changes
+
 - Fixing broken UI → Use `fix/*`
 - Improving existing UI → Use `feature/*`
 - UI documentation → Use `docs/*`
 
 #### Database Changes
+
 - Fixing data issues → Use `fix/*`
 - Schema migrations → Use `feature/*`
 - Documentation updates → Use `docs/*`
 
 #### Testing
+
 - Adding test coverage → Use `chore/*`
 - Fixing failing tests → Use `fix/*`
 - Test documentation → Use `docs/*`
@@ -230,6 +258,7 @@ Is it a new feature or significant enhancement?
 ### Decision Guidelines
 
 When in doubt:
+
 1. Consider the impact of the change
 2. Evaluate if it's fixing something or adding something
 3. Check if it's user-facing or internal
@@ -238,22 +267,24 @@ When in doubt:
 
 ## Branch Type Comparison
 
-| Branch Type | Purpose | Typical Changes | Example Scenarios |
-|-------------|---------|-----------------|-------------------|
-| `feature/*` | New functionality | New code, major changes | User auth, payment system |
-| `fix/*` | Bug fixes | Code corrections | Login validation, API limits |
-| `chore/*` | Maintenance | Config, dependencies | Package updates, CI setup |
-| `docs/*` | Documentation | Text, guides | API docs, installation guide |
+| Branch Type | Purpose           | Typical Changes         | Example Scenarios            |
+| ----------- | ----------------- | ----------------------- | ---------------------------- |
+| `feature/*` | New functionality | New code, major changes | User auth, payment system    |
+| `fix/*`     | Bug fixes         | Code corrections        | Login validation, API limits |
+| `chore/*`   | Maintenance       | Config, dependencies    | Package updates, CI setup    |
+| `docs/*`    | Documentation     | Text, guides            | API docs, installation guide |
 
 ## Branch Naming Convention
 
 All branch names should:
+
 - Be lowercase
 - Use hyphens for word separation
 - Be descriptive and concise
 - Follow the pattern: `type/description`
 
 Example branch structure:
+
 ```
 main
 ├── develop
@@ -273,6 +304,7 @@ main
 ### Feature Development
 
 1. Create a new feature branch from `develop`:
+
    ```bash
    git checkout develop
    git pull origin develop
@@ -280,12 +312,14 @@ main
    ```
 
 2. Make your changes and commit them:
+
    ```bash
    git add .
    git commit -m "Description of your changes"
    ```
 
 3. Push your feature branch:
+
    ```bash
    git push -u origin feature/your-feature-name
    ```
@@ -333,6 +367,7 @@ main
 ## Common Commands
 
 ### Branch Management
+
 ```bash
 # Create and switch to a new branch
 git checkout -b branch-name
@@ -351,6 +386,7 @@ git push origin --delete branch-name
 ```
 
 ### Syncing with Remote
+
 ```bash
 # Pull latest changes
 git pull origin branch-name
@@ -363,6 +399,7 @@ git push -f origin branch-name
 ```
 
 ### Stashing Changes
+
 ```bash
 # Stash changes
 git stash
@@ -377,12 +414,14 @@ git stash list
 ## Troubleshooting
 
 ### Resolving Merge Conflicts
+
 1. Pull the latest changes
 2. Resolve conflicts in your editor
 3. Add resolved files
 4. Commit the changes
 
 ### Reverting Changes
+
 ```bash
 # Revert a commit
 git revert commit-hash
@@ -398,30 +437,35 @@ Branch protection rules are GitHub settings that help maintain code quality and 
 ### Protected Branches
 
 The following branches are protected:
+
 - `main` - Default branch containing stable code
 - `production` - Production branch containing deployable code
 
 ### Protection Settings
 
 #### Basic Protection
+
 - Direct pushes to protected branches are not allowed
 - All changes must go through Pull Requests
 - PRs require at least one approval before merging
 - Status checks must pass before merging
 
 #### Required Status Checks
+
 - All CI/CD pipeline checks must pass
 - Code coverage requirements must be met
 - Build and test suites must complete successfully
 - Dependencies must be up to date
 
 #### Review Requirements
+
 - At least one approval from team members
 - Review from code owners if the PR affects their code
 - No changes allowed after approval (unless explicitly requested)
 - All conversations must be resolved before merging
 
 #### Additional Rules
+
 - Branches must be up to date before merging
 - Force pushes are not allowed
 - Branch deletion is restricted
@@ -446,12 +490,14 @@ To set up branch protection rules:
 ### Managing Protected Branches
 
 #### For Developers
+
 - Always create feature branches from `develop`
 - Keep your branches up to date with the base branch
 - Request reviews from appropriate team members
 - Address all review comments before merging
 
 #### For Maintainers
+
 - Monitor PRs for compliance with protection rules
 - Review and approve PRs that meet quality standards
 - Handle merge conflicts when necessary
@@ -462,15 +508,18 @@ To set up branch protection rules:
 Common issues and solutions:
 
 1. **Cannot push directly to protected branch**
+
    - Create a feature branch instead
    - Submit changes via PR
 
 2. **PR blocked due to failing checks**
+
    - Review the failing checks
    - Fix the issues in your branch
    - Push the fixes to trigger new checks
 
 3. **PR requires approvals**
+
    - Request reviews from team members
    - Address all review comments
    - Wait for required number of approvals
@@ -482,4 +531,4 @@ Common issues and solutions:
 
 ## Contact
 
-For any questions or issues regarding the Git workflow, please contact the repository maintainers. 
+For any questions or issues regarding the Git workflow, please contact the repository maintainers.
