@@ -11,6 +11,8 @@ import vercel from '@astrojs/vercel';
 
 import showTailwindcssBreakpoint from 'astro-show-tailwindcss-breakpoint';
 
+import icon from 'astro-icon';
+
 // https://astro.build/config
 export default defineConfig({
   vite: {
@@ -22,6 +24,6 @@ export default defineConfig({
   // update to 'server' if you want to use server-side rendering
   output: 'static',
 
-  integrations: [mdx(), sitemap(), showTailwindcssBreakpoint()],
+  integrations: [mdx(), sitemap(), showTailwindcssBreakpoint(), icon()],
   adapter: vercel(),
 });
