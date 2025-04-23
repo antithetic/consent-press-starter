@@ -26,6 +26,9 @@ importers:
       astro-show-tailwindcss-breakpoint:
         specifier: ^1.0.9
         version: 1.0.9(astro@5.7.4(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.40.0)(typescript@5.8.3))
+      lucide-astro:
+        specifier: ^0.503.0
+        version: 0.503.0(astro@5.7.4(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.40.0)(typescript@5.8.3))
       tailwindcss:
         specifier: ^4.1.4
         version: 4.1.4
@@ -1265,6 +1268,11 @@ packages:
 
   lru-cache@10.4.3:
     resolution: {integrity: sha512-JNAzZcXrCt42VGLuYz0zfAzDfAvJWW6AfYlDBQyDV5DClI2m5sAmK+OIO7s59XfsRsWHp02jAJrRadPRGTt6SQ==}
+
+  lucide-astro@0.503.0:
+    resolution: {integrity: sha512-Jjl1kRxB0kM1KXD4LA0/HvO1AxLXmVRR4O+DDP9eyhPjPURmfuG4VIr3TEqt/6EtiO+SRlgDZnmox0jtlV89zw==}
+    peerDependencies:
+      astro: '>=2.7.1'
 
   magic-string@0.30.17:
     resolution: {integrity: sha512-sNPKHvyjVf7gyjwS4xGTaW/mCnF8wnjtifKBEhxfZ7E/S8tQ0rssrwGNn6q8JH/ohItJfSQp9mBtQYuTlH5QnA==}
@@ -3435,6 +3443,10 @@ snapshots:
   longest-streak@3.1.0: {}
 
   lru-cache@10.4.3: {}
+
+  lucide-astro@0.503.0(astro@5.7.4(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.40.0)(typescript@5.8.3)):
+    dependencies:
+      astro: 5.7.4(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.40.0)(typescript@5.8.3)
 
   magic-string@0.30.17:
     dependencies:
