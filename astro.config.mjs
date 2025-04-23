@@ -9,6 +9,8 @@ import sitemap from '@astrojs/sitemap';
 
 import vercel from '@astrojs/vercel';
 
+import showTailwindcssBreakpoint from 'astro-show-tailwindcss-breakpoint';
+
 // https://astro.build/config
 export default defineConfig({
   vite: {
@@ -20,6 +22,6 @@ export default defineConfig({
   // update to 'server' if you want to use server-side rendering
   output: 'static',
 
-  integrations: [mdx(), sitemap()],
+  integrations: [mdx(), sitemap(), showTailwindcssBreakpoint()],
   adapter: vercel(),
 });
