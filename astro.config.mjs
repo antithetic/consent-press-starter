@@ -19,6 +19,7 @@ export default defineConfig({
   site: 'https://starter.consent.press',
   // update to 'server' if you want to use server-side rendering
   output: 'static',
+
   integrations: [mdx(), sitemap()],
   adapter: vercel(),
 });
