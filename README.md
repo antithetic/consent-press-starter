@@ -1,4 +1,72 @@
-# Astro Starter Kit: Minimal
+# Consent Press Starter
+
+A modern, opinionated starter template for building consent management applications with Astro.
+
+## 🚀 Features
+
+- ⚡️ Built with [Astro](https://astro.build)
+- 🎨 Styled with [Tailwind CSS](https://tailwindcss.com)
+- 📝 TypeScript support
+- 🧩 Component-based architecture
+- 📦 Package management with pnpm
+- 🛠️ Development tools (ESLint, Prettier)
+
+## 📁 Project Structure
+
+```text
+/
+├── public/         # Static files served as-is
+├── src/            # Source code
+│   ├── assets/     # Static assets (images, fonts, etc.)
+│   ├── components/ # Reusable UI components
+│   ├── content/    # Content files (markdown, JSON, etc.)
+│   ├── layouts/    # Page layout components
+│   ├── pages/      # Page components
+│   ├── styles/     # Global styles and CSS
+│   └── utils/      # Utility functions and helpers
+├── docs/           # Project documentation
+├── .astro/         # Astro configuration
+└── .vscode/        # VS Code settings
+```
+
+For detailed information about the project structure, see [Project Structure Documentation](./docs/project-structure.md).
+
+## 🧞 Commands
+
+All commands are run from the root of the project:
+
+| Command                | Action                                           |
+| :--------------------- | :----------------------------------------------- |
+| `pnpm install`         | Installs dependencies                            |
+| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
+| `pnpm build`           | Build your production site to `./dist/`          |
+| `pnpm preview`         | Preview your build locally, before deploying     |
+| `pnpm format`          | Format code with Prettier                        |
+| `pnpm lint`            | Lint code with ESLint                           |
+| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
+
+## 📚 Documentation
+
+- [Project Structure](./docs/project-structure.md)
+- [Git Branch Management](./docs/git-branch-management.md)
+
+## 🛠️ Development
+
+### Prerequisites
+
+- Node.js (v18 or later)
+- pnpm (v8 or later)
+
+### Getting Started
+
+1. Clone the repository
+2. Install dependencies: `pnpm install`
+3. Start the development server: `pnpm dev`
+4. Open [http://localhost:4321](http://localhost:4321)
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ```sh
 pnpm create astro@latest -- --template minimal
