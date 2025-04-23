@@ -10,6 +10,10 @@ A modern, opinionated starter template for building consent management applicati
 - 🧩 Component-based architecture
 - 📦 Package management with pnpm
 - 🛠️ Development tools (ESLint, Prettier)
+- 🔍 SEO optimized with sitemap generation
+- 📱 Responsive design
+- 🎯 Icon system with multiple providers
+- 📄 MDX support for enhanced content
 
 ## 📁 Project Structure
 
@@ -45,10 +49,26 @@ All commands are run from the root of the project:
 | `pnpm lint`      | Lint code with ESLint                            |
 | `pnpm astro ...` | Run CLI commands like `astro add`, `astro check` |
 
+## 🔌 Integrations
+
+This project includes several powerful integrations:
+
+- **@astrojs/mdx**: Enhanced markdown support with MDX
+- **@astrojs/sitemap**: Automatic sitemap generation
+- **@astrojs/vercel**: Vercel deployment adapter
+- **astro-icon**: Flexible icon system
+- **lucide-astro**: Lucide icon set integration
+- **@tailwindcss/typography**: Enhanced typography with Tailwind
+
 ## 📚 Documentation
 
-- [Project Structure](./docs/project-structure.md)
-- [Git Branch Management](./docs/git-branch-management.md)
+Our documentation is organized by use case and category. See the [Documentation Index](./docs/index.md) for a complete overview.
+
+Key documentation sections:
+- [Core Documentation](./docs/index.md#core-documentation)
+- [Development Workflow](./docs/index.md#development-workflow)
+- [Astro Integrations](./docs/index.md#astro-integrations)
+- [Reference Guides](./docs/index.md#reference-guides)
 
 ## 🛠️ Development
 
@@ -67,6 +87,10 @@ All commands are run from the root of the project:
 ## 📝 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🤝 Contributing
+
+We welcome contributions! Please see our [Git Workflow](./docs/git-workflow.md) documentation for guidelines on how to contribute to this project.
 
 ```sh
 pnpm create astro@latest -- --template minimal
