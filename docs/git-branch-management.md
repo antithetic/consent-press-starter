@@ -25,6 +25,7 @@ git status
 If you have uncommitted changes, you have two options:
 
 #### Option A: Discard All Changes
+
 If you want to discard all changes and untracked files:
 
 ```bash
@@ -36,6 +37,7 @@ git restore .
 ```
 
 #### Option B: Save Changes for Later (Optional)
+
 If you want to keep the changes for later:
 
 ```bash
@@ -80,4 +82,4 @@ git restore .
 # Switch to develop and delete feature branch
 git checkout develop
 git branch -D feature/my-feature
-``` 
+```
