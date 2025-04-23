@@ -12,6 +12,7 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
-
+  //update this to your own domain
+  site: 'https://starter.consent.press',
   integrations: [mdx(), sitemap()],
 });
