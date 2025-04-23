@@ -7,12 +7,18 @@ import mdx from '@astrojs/mdx';
 
 import sitemap from '@astrojs/sitemap';
 
+import vercel from '@astrojs/vercel';
+
 // https://astro.build/config
 export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
+
   //update this to your own domain
   site: 'https://starter.consent.press',
+  // update to 'server' if you want to use server-side rendering
+  output: 'static',
   integrations: [mdx(), sitemap()],
+  adapter: vercel(),
 });
