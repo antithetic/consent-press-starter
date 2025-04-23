@@ -11,8 +11,14 @@
     "format:check": "prettier --check ."
   },
   "dependencies": {
+    "@astrojs/mdx": "^4.2.5",
+    "@astrojs/sitemap": "^3.3.1",
+    "@astrojs/vercel": "^8.1.4",
     "@tailwindcss/vite": "^4.1.4",
     "astro": "^5.7.4",
+    "astro-icon": "^1.1.5",
+    "astro-show-tailwindcss-breakpoint": "^1.0.9",
+    "lucide-astro": "^0.503.0",
     "tailwindcss": "^4.1.4"
   },
   "devDependencies": {
