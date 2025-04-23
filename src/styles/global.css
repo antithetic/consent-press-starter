@@ -1,6 +1,10 @@
 @import 'tailwindcss';
 @plugin "@tailwindcss/typography";
 
+html {
+  scroll-behavior: smooth;
+}
 body {
   @apply bg-white text-black;
+  @apply p-4 md:p-8;
 }
