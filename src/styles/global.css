@@ -7,4 +7,5 @@ html {
 body {
   @apply bg-white text-black;
   @apply p-4 md:p-8;
+  font-family: 'Azeret Mono', monospace;
 }
