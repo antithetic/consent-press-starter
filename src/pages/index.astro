@@ -8,7 +8,9 @@ import Container from '@components/layout/Container.astro';
     <div class="starter">
       <header>
         <h1>Consent Press Starter</h1>
-        <p>This is a project starter for Consent Press & affiliated endevours.</p>
+        <p>
+          This is a project starter for Consent Press & affiliated endevours.
+        </p>
       </header>
       <nav>
         <!-- Starter Nav -->
@@ -17,7 +19,8 @@ import Container from '@components/layout/Container.astro';
         <section id="about">
           <h2>About</h2>
           <div class="content-box">
-            A modern, opinionated starter template for building consent press websites and applications with Astro.
+            A modern, opinionated starter template for building consent press
+            websites and applications with Astro.
           </div>
         </section>
         <section id="features">
@@ -25,7 +28,10 @@ import Container from '@components/layout/Container.astro';
           <div class="content-box">
             <ul>
               <li>⚡️ Built with <a href="https://astro.build">Astro</a></li>
-              <li>🎨 Styled with <a href="https://tailwindcss.com">Tailwind CSS</a></li>
+              <li>
+                🎨 Styled with <a href="https://tailwindcss.com">Tailwind CSS</a
+                >
+              </li>
               <li>📝 TypeScript support</li>
               <li>🧩 Component-based architecture</li>
               <li>📦 Package management with pnpm</li>
@@ -37,9 +43,59 @@ import Container from '@components/layout/Container.astro';
             </ul>
           </div>
         </section>
-        <div id="structure">
-          
-        </div>
+        <section id="structure">
+          <h2>Project Structure</h2>
+          <pre
+            class="content-box project-structure">
+/
+├── public/         # Static files served as-is
+├── src/            # Source code
+│   ├── assets/     # Static assets (images, fonts, etc.)
+│   ├── components/ # Reusable UI components
+│   ├── content/    # Content files (markdown, JSON, etc.)
+│       ├── docs/   # Project documentation
+│   ├── layouts/    # Page layout components
+│   ├── pages/      # Page components
+│   ├── styles/     # Global styles and CSS
+│   └── utils/      # Utility functions and helpers
+├── .astro/         # Astro configuration
+</pre>
+        </section>
+        <section id="integrations">
+          <h2>Integrations</h2>
+          <div class="content-box">
+            <p>This project includes several powerful integrations:</p>
+            <ul>
+              <li><strong>@astrojs/mdx</strong>: 📝 Enhanced markdown support with MDX</li>
+              <li><strong>@astrojs/sitemap</strong>: 🗺️ Automatic sitemap generation</li>
+              <li><strong>@astrojs/vercel</strong>: 🚀 Vercel deployment adapter</li>
+              <li><strong>astro-icon</strong>: 🎨 Flexible icon system</li>
+              <li><strong>lucide-astro</strong>: ✨ Lucide icon set integration</li>
+              <li><strong>@tailwindcss/typography</strong>: 📖 Enhanced typography with Tailwind</li>
+            </ul>
+          </div>
+
+        </section>
+        <section id="development">
+          <h2>Development</h2>
+          <div class="content-box">
+            <h3>Prerequisites:</h3>
+            <ul>
+              <li><strong>Node.js</strong>: v18.16.0 or higher</li>
+              <li><strong>pnpm</strong>: v9.1.1 or higher</li>
+              
+            </ul>
+          </div>
+          <h2>Getting Started</h2>
+          <div id="getting-started" class="content-box">
+            <ol>
+              <li>Clone the repository</li>
+              <li>Install dependencies: <code>pnpm install</code></li>
+              <li>Start the development server: <code>pnpm dev</code></li>
+              <li>Open <a href="http://localhost:4321">http://localhost:4321</a></li>
+            </ol>
+          </div>
+        </section>
       </main>
     </div>
   </Container>

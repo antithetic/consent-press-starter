@@ -23,7 +23,7 @@ body {
 }
 
 .starter header h1 {
-  @apply text-2xl md:text-4xl font-bold tracking-tighter;
+  @apply text-2xl font-bold tracking-tighter md:text-4xl;
 }
 
 .starter header p {
@@ -31,7 +31,7 @@ body {
 }
 
 .starter h2 {
-  @apply text-xl md:text-2xl font-bold tracking-tighter;
+  @apply text-xl font-bold tracking-tighter md:text-2xl;
 }
 
 .starter .content-box {
@@ -47,6 +47,24 @@ body {
   overflow: hidden;
   @apply mb-8;
 }
-
-
-
+#integrations p{
+  @apply mb-2;
+}
+#integrations li {
+ @apply mb-0.5;
+}
+#development h3{
+  @apply mb-2;
+}
+#development li {
+  @apply mb-2;
+}
+#getting-started ol {
+  @apply list-decimal pl-8;
+}
+#getting-started li {
+  @apply mb-2 ;
+}
+#getting-started li code {
+  @apply bg-gray-200 p-1 rounded;
+}
