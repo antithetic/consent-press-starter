@@ -87,8 +87,7 @@ Key documentation sections:
 
 ## 📝 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
+This project is licensed under the MIT License.
 ## 🤝 Contributing
 
 We welcome contributions! Please see our [Git Workflow](./src/content/docs/git-workflow.md) documentation for guidelines on how to contribute to this project.
