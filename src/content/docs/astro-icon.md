@@ -1,3 +1,9 @@
+---
+title: Astro Icon Integration
+description: Documentation for the Astro Icon integration, including installation, usage, and configuration
+date: 2024-04-24
+---
+
 # Astro Icon
 
 This **[Astro integration](https://docs.astro.build/en/guides/integrations-guide/)** provides a straight-forward `Icon` component for [Astro](https://astro.build).

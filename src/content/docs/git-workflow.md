@@ -1,3 +1,9 @@
+---
+title: Git Workflow Guide
+description: Comprehensive guide to our Git workflow, including branch types, use cases, and best practices
+date: 2024-04-23
+---
+
 # Git Workflow Documentation
 
 ## Branch Structure

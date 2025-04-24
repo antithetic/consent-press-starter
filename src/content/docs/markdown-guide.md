@@ -1,3 +1,9 @@
+---
+title: Markdown Guide
+description: Comprehensive guide to Markdown syntax, formatting options, and best practices
+date: 2024-04-24
+---
+
 # Markdown Guide 📝
 
 This guide covers the most commonly used markdown syntax and formatting options.

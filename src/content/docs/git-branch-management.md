@@ -1,3 +1,9 @@
+---
+title: Git Branch Management
+description: Guide for managing Git branches, including safe deletion and branch switching procedures
+date: 2024-04-23
+---
+
 # Git Branch Management Guide
 
 ## How to Delete Current Branch and Return to Original Branch

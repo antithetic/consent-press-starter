@@ -1,3 +1,9 @@
+---
+title: Development to Main Workflow
+description: Step-by-step guide for moving code from development to main branch, including best practices and examples
+date: 2024-04-24
+---
+
 # Development to Main Workflow Guide
 
 This document outlines the process of moving code from development to the main branch, including best practices, commands, and examples.

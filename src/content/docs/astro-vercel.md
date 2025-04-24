@@ -1,3 +1,9 @@
+---
+title: Astro Vercel Integration
+description: Documentation for the Astro Vercel adapter, enabling deployment of SSR sites to Vercel
+date: 2024-04-24
+---
+
 # @astrojs/vercel
 
 This adapter allows Astro to deploy your SSR site to [Vercel](https://www.vercel.com/).

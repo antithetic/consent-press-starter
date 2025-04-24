@@ -1,3 +1,9 @@
+---
+title: Documentation Index
+description: Main index page organizing all project documentation by use case and category
+date: 2024-04-23
+---
+
 # Documentation Index
 
 This index organizes the project documentation by use case and category.

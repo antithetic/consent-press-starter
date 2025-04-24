@@ -1,3 +1,9 @@
+---
+title: Lucide Astro Integration
+description: Documentation for the Lucide Astro integration, enabling the use of Lucide icons in Astro projects
+date: 2024-04-24
+---
+
 # lucide-astro
 
 <a href="https://discord.gg/BsNNqNJ4Yj">

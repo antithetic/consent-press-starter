@@ -1,3 +1,9 @@
+---
+title: Astro MDX Integration
+description: Documentation for the Astro MDX integration, enabling MDX components and .mdx file support
+date: 2024-04-24
+---
+
 # @astrojs/mdx 📝
 
 This **[Astro integration][astro-integration]** enables the usage of [MDX](https://mdxjs.com/) components and allows you to create pages as `.mdx` files.

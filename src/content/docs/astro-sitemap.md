@@ -1,3 +1,9 @@
+---
+title: Astro Sitemap Integration
+description: Documentation for the Astro Sitemap integration, enabling automatic sitemap generation
+date: 2024-04-24
+---
+
 # @astrojs/sitemap 🗺
 
 This **[Astro integration][astro-integration]** generates a sitemap based on your pages when you build your Astro project.
