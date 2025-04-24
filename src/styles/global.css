@@ -6,9 +6,11 @@ html {
 }
 
 body {
-  @apply bg-white text-black;
+  @apply min-h-screen;
   @apply p-4 md:p-8;
   font-family: 'Azeret Mono', monospace;
+  background-color: #f0f0f0;
+  color: #000;
 }
 
 /* Starter Styles */
