@@ -1,7 +1,6 @@
 ---
 title: Project Structure
 description: Comprehensive guide to the project's directory structure and organization
-date: 2024-04-23
 ---
 
 # Project Structure

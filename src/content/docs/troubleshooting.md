@@ -1,7 +1,6 @@
 ---
 title: Troubleshooting Guide
 description: Solutions for common issues encountered while working with the Consent Press Starter project
-date: 2024-04-24
 ---
 
 # Troubleshooting Guide
