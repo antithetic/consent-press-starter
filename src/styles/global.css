@@ -4,8 +4,20 @@
 html {
   scroll-behavior: smooth;
 }
+
 body {
   @apply bg-white text-black;
   @apply p-4 md:p-8;
   font-family: 'Azeret Mono', monospace;
+}
+
+/* Starter Styles */
+/* Remove when you start your project */
+
+h1 {
+  @apply text-2xl md:text-4xl font-bold tracking-tighter;
+}
+
+p {
+  @apply text-sm md:text-base;
 }
