@@ -33,7 +33,7 @@ A modern, opinionated starter template for building consent press websites and a
 └── .vscode/        # VS Code settings
 ```
 
-For detailed information about the project structure, see [Project Structure Documentation](./docs/project-structure.md).
+For detailed information about the project structure, see [Project Structure Documentation](./src/content/docs/project-structure.md).
 
 ## 🧞 Commands
 
