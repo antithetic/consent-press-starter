@@ -15,6 +15,7 @@
     "@astrojs/sitemap": "^3.3.1",
     "@astrojs/vercel": "^8.1.4",
     "@fontsource-variable/azeret-mono": "^5.2.6",
+    "@radix-ui/colors": "^3.0.0",
     "@tailwindcss/vite": "^4.1.4",
     "astro": "^5.7.4",
     "astro-icon": "^1.1.5",
