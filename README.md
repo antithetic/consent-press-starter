@@ -62,14 +62,14 @@ This project includes several powerful integrations:
 
 ## 📚 Documentation
 
-Our documentation is organized by use case and category. See the [Documentation Index](./docs/index.md) for a complete overview.
+Our documentation is organized by use case and category. See the [Documentation Index](./src/content/docs/index.md) for a complete overview.
 
 Key documentation sections:
 
-- [Core Documentation](./docs/index.md#core-documentation)
-- [Development Workflow](./docs/index.md#development-workflow)
-- [Astro Integrations](./docs/index.md#astro-integrations)
-- [Reference Guides](./docs/index.md#reference-guides)
+- [Core Documentation](./src/content/docs/index.md#core-documentation)
+- [Development Workflow](./src/content/docs/index.md#development-workflow)
+- [Astro Integrations](./src/content/docs/index.md#astro-integrations)
+- [Reference Guides](./src/content/docs/index.md#reference-guides)
 
 ## 🛠️ Development
 
@@ -91,7 +91,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🤝 Contributing
 
-We welcome contributions! Please see our [Git Workflow](./docs/git-workflow.md) documentation for guidelines on how to contribute to this project.
+We welcome contributions! Please see our [Git Workflow](./src/content/docs/git-workflow.md) documentation for guidelines on how to contribute to this project.
 
 ```sh
 pnpm create astro@latest -- --template minimal
