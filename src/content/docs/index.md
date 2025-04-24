@@ -22,11 +22,13 @@ This index organizes the project documentation by use case and category.
 ## Astro Integrations
 
 ### Core Integrations
+
 - [MDX Integration](./astro-mdx.md) - Documentation for the MDX integration
 - [Sitemap Integration](./astro-sitemap.md) - Guide for the sitemap generation
 - [Vercel Integration](./astro-vercel.md) - Instructions for deploying to Vercel
 
 ### UI Components
+
 - [Icon Integration](./astro-icon.md) - Guide for using the Icon component
 - [Lucide Icons](./lucide-astro.md) - Documentation for Lucide icon integration
 
@@ -40,4 +42,4 @@ This index organizes the project documentation by use case and category.
 - [Development Commands](./project-structure.md#commands)
 - [Deployment Guide](./astro-vercel.md)
 - [Component Documentation](./astro-icon.md)
-- [Content Authoring](./markdown-guide.md) 
+- [Content Authoring](./markdown-guide.md)

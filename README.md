@@ -65,6 +65,7 @@ This project includes several powerful integrations:
 Our documentation is organized by use case and category. See the [Documentation Index](./docs/index.md) for a complete overview.
 
 Key documentation sections:
+
 - [Core Documentation](./docs/index.md#core-documentation)
 - [Development Workflow](./docs/index.md#development-workflow)
 - [Astro Integrations](./docs/index.md#astro-integrations)

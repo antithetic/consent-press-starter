@@ -12,35 +12,44 @@ This guide covers the most commonly used markdown syntax and formatting options.
 
 ```markdown
 # H1
+
 ## H2
+
 ### H3
+
 #### H4
+
 ##### H5
+
 ###### H6
 ```
 
 ## Text Formatting
 
 ```markdown
-*Italic text* or _Italic text_
-**Bold text** or __Bold text__
-***Bold and italic*** or ___Bold and italic___
+_Italic text_ or _Italic text_
+**Bold text** or **Bold text**
+**_Bold and italic_** or **_Bold and italic_**
 ~~Strikethrough text~~
 ```
 
 ## Lists
 
 ### Unordered Lists
+
 ```markdown
 - Item 1
 - Item 2
   - Subitem 2.1
   - Subitem 2.2
+
 * Alternative bullet
-+ Another alternative
+
+- Another alternative
 ```
 
 ### Ordered Lists
+
 ```markdown
 1. First item
 2. Second item
@@ -53,7 +62,7 @@ This guide covers the most commonly used markdown syntax and formatting options.
 
 ```markdown
 [Link text](https://example.com)
-[Link with title](https://example.com "Title text")
+[Link with title](https://example.com 'Title text')
 [Reference-style link][reference]
 
 [reference]: https://example.com
@@ -63,7 +72,7 @@ This guide covers the most commonly used markdown syntax and formatting options.
 
 ```markdown
 ![Alt text](image.jpg)
-![Alt text with title](image.jpg "Title text")
+![Alt text with title](image.jpg 'Title text')
 ![Reference-style image][image-ref]
 
 [image-ref]: image.jpg
@@ -72,11 +81,13 @@ This guide covers the most commonly used markdown syntax and formatting options.
 ## Code
 
 ### Inline Code
+
 ```markdown
 Use `backticks` for inline code.
 ```
 
 ### Code Blocks
+
 ````markdown
 ```language
 // Code block with syntax highlighting
@@ -90,7 +101,7 @@ function example() {
 
 ```markdown
 > This is a blockquote
-> 
+>
 > > This is a nested blockquote
 ```
 
@@ -98,15 +109,17 @@ function example() {
 
 ```markdown
 ---
-***
-___
+
+---
+
+---
 ```
 
 ## Tables
 
 ```markdown
 | Header 1 | Header 2 |
-|----------|----------|
+| -------- | -------- |
 | Cell 1   | Cell 2   |
 | Cell 3   | Cell 4   |
 ```
@@ -173,4 +186,4 @@ Here's a sentence with a footnote[^1].
 - [Markdown Preview](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced) - VS Code extension
 - [Dillinger](https://dillinger.io/) - Online markdown editor
 - [StackEdit](https://stackedit.io/) - Online markdown editor
-- [Markdown Guide](https://www.markdownguide.org/) - Comprehensive markdown reference 
+- [Markdown Guide](https://www.markdownguide.org/) - Comprehensive markdown reference
