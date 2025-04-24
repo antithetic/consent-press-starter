@@ -9,6 +9,7 @@ date: 2024-04-24
 This document provides solutions for common issues you might encounter while working with the Consent Press Starter project.
 
 ## Table of Contents
+
 - [Git Related Issues](#git-related-issues)
 - [Build and Development Issues](#build-and-development-issues)
 - [Asset Related Issues](#asset-related-issues)
@@ -16,12 +17,15 @@ This document provides solutions for common issues you might encounter while wor
 ## Git Related Issues
 
 ### Missing or Invalid Branch
+
 **Error Message:**
+
 ```
 error: unable to delete '[branch-name]': remote ref does not exist
 ```
 
 **Solution:**
+
 1. First, check if the branch exists locally:
    ```bash
    git branch -a
@@ -33,13 +37,16 @@ error: unable to delete '[branch-name]': remote ref does not exist
    This will clean up stale remote-tracking branches.
 
 ### Merge Conflicts
+
 **Error Message:**
+
 ```
 CONFLICT (content): Merge conflict in [filename]
 Automatic merge failed; fix conflicts and then commit the result.
 ```
 
 **Solution:**
+
 1. Open the conflicted files and resolve the conflicts
 2. Stage the resolved files:
    ```bash
@@ -53,12 +60,15 @@ Automatic merge failed; fix conflicts and then commit the result.
 ## Build and Development Issues
 
 ### Missing Dependencies
+
 **Error Message:**
+
 ```
 Cannot find module '[module-name]'
 ```
 
 **Solution:**
+
 1. Install or reinstall dependencies:
    ```bash
    pnpm install
@@ -69,12 +79,15 @@ Cannot find module '[module-name]'
    ```
 
 ### Port Already in Use
+
 **Error Message:**
+
 ```
 Error: listen EADDRINUSE: address already in use :::3000
 ```
 
 **Solution:**
+
 1. Find the process using the port:
    ```bash
    lsof -i :3000
@@ -87,12 +100,15 @@ Error: listen EADDRINUSE: address already in use :::3000
 ## Asset Related Issues
 
 ### Missing Asset Files
+
 **Error Message:**
+
 ```
 ENOENT: no such file or directory, open '[filename]'
 ```
 
 **Solution:**
+
 1. Check if the asset exists in the correct directory
 2. Ensure the path in your code matches the actual file location
 3. If the asset is missing:
@@ -101,12 +117,15 @@ ENOENT: no such file or directory, open '[filename]'
    - Commit the new asset if it should be version controlled
 
 ### SVG Rendering Issues
+
 **Error Message:**
+
 ```
 Failed to load resource: the server responded with a status of 404 (Not Found)
 ```
 
 **Solution:**
+
 1. Verify the SVG file exists in the correct location
 2. Check the file permissions
 3. Ensure the SVG markup is valid
@@ -117,11 +136,13 @@ Failed to load resource: the server responded with a status of 404 (Not Found)
 ## Best Practices for Error Prevention
 
 1. **Before Starting Work:**
+
    - Always pull the latest changes from the main branch
    - Create a new feature branch from the updated main
    - Verify all dependencies are installed
 
 2. **During Development:**
+
    - Commit frequently with clear messages
    - Keep branches focused on single features/fixes
    - Test changes locally before pushing
@@ -143,4 +164,4 @@ If you encounter an issue not covered in this guide:
    - Clear description of the problem
    - Steps to reproduce
    - Expected vs actual behavior
-   - Relevant error messages and logs 
+   - Relevant error messages and logs

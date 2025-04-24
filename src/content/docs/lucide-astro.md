@@ -40,11 +40,11 @@ You can import each icons individually like below
 
 ```astro
 ---
-import { WifiOff } from 'lucide-astro'
+import { WifiOff } from 'lucide-astro';
 ---
 
 <Layout>
-	<WifiOff />
+  <WifiOff />
 </Layout>
 ```
 
@@ -58,4 +58,4 @@ import { WifiOff } from 'lucide-astro'
 
 Use the awesome icons from [Lucide](https://lucide.dev/)
 
-based on [astro-feather](https://github.com/gabrlyg/astro-feather) 
+based on [astro-feather](https://github.com/gabrlyg/astro-feather)

@@ -49,8 +49,8 @@ Then, apply this integration to your `astro.config.*` file using the `integratio
 **`astro.config.mjs`**
 
 ```js
-import { defineConfig } from "astro/config";
-import icon from "astro-icon";
+import { defineConfig } from 'astro/config';
+import icon from 'astro-icon';
 
 export default defineConfig({
   integrations: [icon()],
@@ -88,7 +88,7 @@ Astro Icon also supports [Iconify](https://iconify.design) icon sets out-of-the-
 
 ```astro
 ---
-import { Icon } from 'astro-icon/components'
+import { Icon } from 'astro-icon/components';
 ---
 
 <!-- Automatically fetches and inlines Material Design Icon's "account" SVG -->
@@ -100,12 +100,12 @@ import { Icon } from 'astro-icon/components'
 The `Icon` component allows these custom properties:
 
 ```ts
-interface Props extends HTMLAttributes<"svg"> {
+interface Props extends HTMLAttributes<'svg'> {
   /**
    * References a specific Icon
    */
   name: string;
-  "is:inline"?: boolean;
+  'is:inline'?: boolean;
   title?: string;
   desc?: string;
   size?: number | string;
@@ -127,23 +127,26 @@ import { Icon } from 'astro-icon/components';
 ---
 
 <style lang="css">
-    [data-icon] {
-        color: blue;
-        /* OR */
-        fill: blue;
-    }
-    [data-icon="annotation"] {
-        color: red;
-        /* OR */
-        fill: red;
-    }
+  [data-icon] {
+    color: blue;
+    /* OR */
+    fill: blue;
+  }
+  [data-icon='annotation'] {
+    color: red;
+    /* OR */
+    fill: red;
+  }
 </style>
 
-<Icon name="adjustment" /> <!-- will be blue -->
-<Icon name="annotation" /> <!-- will be red -->
+<Icon name="adjustment" />
+<!-- will be blue -->
+<Icon name="annotation" />
+<!-- will be red -->
 
 <!-- Example using Tailwind to apply color -->
-<Icon name="annotation" class="text-red-500" /> <!-- will be red-500 -->
+<Icon name="annotation" class="text-red-500" />
+<!-- will be red-500 -->
 ```
 
 ### Using with Frameworks
@@ -165,16 +168,16 @@ To filter the exact Iconify icons that should be included, set an array of allow
 **`astro.config.mjs`**
 
 ```js
-import { defineConfig } from "astro/config";
-import icon from "astro-icon";
+import { defineConfig } from 'astro/config';
+import icon from 'astro-icon';
 
 export default defineConfig({
   // ...
   integrations: [
     icon({
       include: {
-        mdi: ["*"], // (Default) Loads entire Material Design Icon set
-        mdi: ["account"], // Loads only Material Design Icon's "account" SVG
+        mdi: ['*'], // (Default) Loads entire Material Design Icon set
+        mdi: ['account'], // Loads only Material Design Icon's "account" SVG
       },
     }),
   ],
@@ -186,14 +189,14 @@ export default defineConfig({
 If you want to use a different custom svg icon directory instead of the default `src/icons/`, specify that file path using `config.iconDir`
 
 ```js
-import { defineConfig } from "astro/config";
-import icon from "astro-icon";
+import { defineConfig } from 'astro/config';
+import icon from 'astro-icon';
 
 export default defineConfig({
   // ...
   integrations: [
     icon({
-      iconDir: "src/assets/icons",
+      iconDir: 'src/assets/icons',
     }),
   ],
 });
@@ -204,8 +207,8 @@ export default defineConfig({
 If you want to behavior of `.svg` optimization, you can configure the `svgo` options rather than using the defaults. Read more about the available [`svgo` options here](https://github.com/svg/svgo#configuration).
 
 ```js
-import { defineConfig } from "astro/config";
-import icon from "astro-icon";
+import { defineConfig } from 'astro/config';
+import icon from 'astro-icon';
 
 export default defineConfig({
   // ...
@@ -215,7 +218,7 @@ export default defineConfig({
         multipass: true,
         plugins: [
           {
-            name: "preset-default",
+            name: 'preset-default',
             params: {
               overrides: {
                 // customize default plugin options
@@ -245,4 +248,4 @@ You're welcome to submit an issue or PR!
 
 ## Changelog
 
-See [CHANGELOG.md](CHANGELOG.md) for a history of changes to this integration. 
+See [CHANGELOG.md](CHANGELOG.md) for a history of changes to this integration.
