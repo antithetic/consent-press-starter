@@ -1,7 +1,6 @@
 @import 'tailwindcss';
 @plugin "@tailwindcss/typography";
 
-
 html {
   scroll-behavior: smooth;
 }
@@ -11,16 +10,22 @@ body {
   @apply min-h-screen;
   @apply p-4 md:p-8;
   font-family: 'Azeret Mono', monospace;
-  
 }
 
 /* Starter Styles */
 /* Remove when you start your project */
+.starter {
+  @apply mt-8;
+}
 
-h1 {
+.starter header {
+  @apply mb-8 border-b-4 border-black pb-4;
+}
+
+.starter header h1 {
   @apply text-2xl md:text-4xl font-bold tracking-tighter;
 }
 
-p {
-  @apply text-sm md:text-base;
+.starter header p {
+  @apply mt-2 text-sm md:text-base;
 }
