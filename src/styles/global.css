@@ -30,6 +30,10 @@ body {
   @apply mt-2 text-sm md:text-base;
 }
 
+.starter h2 {
+  @apply text-xl md:text-2xl font-bold tracking-tighter;
+}
+
 .starter .content-box {
   display: block;
   padding: 0.75rem;
@@ -41,4 +45,8 @@ body {
   transition: all 0.2s;
   position: relative;
   overflow: hidden;
+  @apply mb-8;
 }
+
+
+
