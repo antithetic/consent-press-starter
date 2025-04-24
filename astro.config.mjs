@@ -15,6 +15,8 @@ import icon from 'astro-icon';
 
 import starlight from '@astrojs/starlight';
 
+
+
 // https://astro.build/config
 export default defineConfig({
   vite: {
@@ -26,9 +28,9 @@ export default defineConfig({
   // update to 'server' if you want to use server-side rendering
   output: 'static',
 
-  integrations: [mdx(), sitemap(), showTailwindcssBreakpoint(), icon(), 
+  integrations: [  sitemap(), showTailwindcssBreakpoint(), icon(), 
     starlight({
       title: 'Project Docs',
-    })],
+    }), mdx()],
   adapter: vercel(),
 });
