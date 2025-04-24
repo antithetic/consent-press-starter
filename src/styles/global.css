@@ -1,13 +1,13 @@
 @import 'tailwindcss';
 @plugin "@tailwindcss/typography";
 
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  background-color: #f0f0f0;
-  color: #000;
+  @apply bg-gray-300 text-black;
   @apply min-h-screen;
   @apply p-4 md:p-8;
   font-family: 'Azeret Mono', monospace;
