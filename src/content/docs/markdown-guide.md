@@ -109,7 +109,6 @@ function example() {
 
 ```markdown
 ---
-
 ---
 
 ---

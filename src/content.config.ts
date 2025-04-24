@@ -1,5 +1,3 @@
 import { defineCollection } from 'astro:content';
 
-export const collections = {
- 
-};
+export const collections = {};

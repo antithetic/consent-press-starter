@@ -10,6 +10,7 @@ This guide covers common scenarios for branch cleanup and synchronization, inclu
 ## Scenario 1: Cleaning Up Feature Branches
 
 ### When to Use
+
 - After a feature branch has been merged
 - When you need to remove stale branches
 - When you want to clean up your local and remote repository
@@ -17,22 +18,27 @@ This guide covers common scenarios for branch cleanup and synchronization, inclu
 ### Steps
 
 1. Switch to your main or develop branch:
+
 ```bash
 git checkout develop
 ```
 
 2. Delete the local feature branch:
+
 ```bash
 git branch -d feature/branch-name
 ```
-   Note: Use `-D` instead of `-d` if the branch hasn't been merged yet and you want to force delete it.
+
+Note: Use `-D` instead of `-d` if the branch hasn't been merged yet and you want to force delete it.
 
 3. Delete the remote feature branch:
+
 ```bash
 git push origin --delete feature/branch-name
 ```
 
 4. Prune stale remote-tracking branches:
+
 ```bash
 git fetch --prune
 ```
@@ -40,6 +46,7 @@ git fetch --prune
 ## Scenario 2: Discarding Local Changes and Cleaning Up
 
 ### When to Use
+
 - When you have unwanted local changes
 - When you need to start fresh from the remote branch
 - When you want to abandon work in progress
@@ -47,6 +54,7 @@ git fetch --prune
 ### Steps
 
 1. If you have changes stashed:
+
 ```bash
 # View stash list
 git stash list
@@ -62,6 +70,7 @@ git stash clear
 ```
 
 2. If you have uncommitted changes you want to discard:
+
 ```bash
 # Discard changes in working directory
 git restore .
@@ -73,6 +82,7 @@ git restore path/to/file
 ## Scenario 3: Synchronizing Branches
 
 ### When to Use
+
 - When branches have diverged
 - When you need to make a branch exactly match main/develop
 - When you need to reset a branch to a known good state
@@ -80,23 +90,27 @@ git restore path/to/file
 ### Steps
 
 1. Fetch latest changes from remote:
+
 ```bash
 git fetch --all
 ```
 
 2. Ensure main/source branch is up to date:
+
 ```bash
 git checkout main
 git pull origin main
 ```
 
 3. Reset target branch to match main:
+
 ```bash
 git checkout target-branch
 git reset --hard main
 ```
 
 4. Force push to update remote (use with caution):
+
 ```bash
 git push origin target-branch --force
 ```
@@ -111,6 +125,7 @@ git push origin target-branch --force
 ## Example Use Cases
 
 ### Example 1: Feature Branch Cleanup After Merge
+
 ```bash
 # Switch to develop branch
 git checkout develop
@@ -126,6 +141,7 @@ git fetch --prune
 ```
 
 ### Example 2: Reset Develop to Match Main
+
 ```bash
 # Fetch all changes
 git fetch --all
@@ -141,6 +157,7 @@ git push origin develop --force
 ```
 
 ### Example 3: Cleanup Work in Progress
+
 ```bash
 # Stash changes if you might need them later
 git stash
@@ -161,4 +178,4 @@ git push origin --delete feature/work-in-progress
 2. Create backup branches for important work before destructive operations
 3. Communicate with your team before force pushing to shared branches
 4. Regularly clean up merged and stale branches to keep the repository tidy
-5. Use branch protection rules on important branches (main, develop) to prevent accidental deletions 
+5. Use branch protection rules on important branches (main, develop) to prevent accidental deletions

@@ -11,6 +11,7 @@ This guide explains how to safely clean up branches both locally and remotely af
 ## When to Clean Up Branches
 
 You should clean up branches when:
+
 - Your feature/fix branch has been successfully merged to `develop`
 - The changes have been reviewed and approved
 - You no longer need the branch for reference
@@ -19,6 +20,7 @@ You should clean up branches when:
 ## Prerequisites
 
 Before cleaning up branches:
+
 1. Ensure your changes are merged to `develop`
 2. Verify the merge was successful
 3. Make sure you don't need the branch anymore
@@ -124,14 +126,17 @@ git push origin --delete feature/user-login fix/login-validation
 ## Best Practices
 
 1. **Always Verify Merges**
+
    - Double-check that your changes are properly merged
    - Ensure no important work is lost
 
 2. **Use Descriptive Branch Names**
+
    - Makes it easier to identify branches to delete
    - Helps prevent accidental deletions
 
 3. **Clean Up Regularly**
+
    - Don't let old branches accumulate
    - Keep your repository clean and organized
 
@@ -181,14 +186,14 @@ You can create a script to automate branch cleanup:
 cleanup_branch() {
     local branch=$1
     echo "Cleaning up branch: $branch"
-    
+
     # Switch to develop and pull latest
     git checkout develop
     git pull origin develop
-    
+
     # Delete local branch
     git branch -d "$branch"
-    
+
     # Delete remote branch
     git push origin --delete "$branch"
 }
@@ -201,4 +206,4 @@ cleanup_branch "feature/user-login"
 
 - [Git Branch Management](./git-branch-management.md)
 - [Git Workflow](./git-workflow.md)
-- [Development to Main Workflow](./development-to-main-workflow.md) 
+- [Development to Main Workflow](./development-to-main-workflow.md)
