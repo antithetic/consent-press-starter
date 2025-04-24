@@ -1,6 +1,6 @@
 # Consent Press Starter
 
-A modern, opinionated starter template for building consent management applications with Astro.
+A modern, opinionated starter template for building consent press websites and applications with Astro.
 
 ## 🚀 Features
 
