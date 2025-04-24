@@ -19,7 +19,9 @@
     "astro": "^5.7.4",
     "astro-icon": "^1.1.5",
     "astro-show-tailwindcss-breakpoint": "^1.0.9",
+    "highlight.js": "^11.11.1",
     "lucide-astro": "^0.503.0",
+    "marked": "^15.0.10",
     "tailwindcss": "^4.1.4"
   },
   "devDependencies": {
